@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #491f5e 50%, #8d2957 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container Styles */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login-logo img {
+    max-width: 200px;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Input fields with icons */
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a3a3a3;
+}
+
+/* Form control styles */
+.form-control {
+    border-radius: 50px;
+    padding: 20px;
+    padding-left: 45px;
+    font-size: 16px;
+    border: 2px solid #e3e3e3;
+    font-weight: 400;
+}
+
+.form-control:focus {
+    border-color: #8d2957;
+    box-shadow: 0 0 0 0.2rem rgba(141, 41, 87, 0.25);
+}
+
+/* Button styles */
+.btn-primary {
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #491F5E;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #8d2957;
+}
+
+/* Register link styles */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Error message styles */
+.alert {
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 16px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+/* Loader styles */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #491F5E;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
